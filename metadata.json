@@ -1,5 +1,5 @@
 {
-  "name": "Hisebi Expense Tracker",
-  "description": "A premium, AI-powered personal finance and debt management application featuring real-time insights, interactive charts, and local data persistence.",
+  "name": "Dor-Dam Expense Tracker",
+  "description": "A premium, local-first personal finance and debt management application featuring interactive charts and persistence.",
   "requestFramePermissions": []
 }

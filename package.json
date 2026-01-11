@@ -1,5 +1,5 @@
 {
-  "name": "hisebi-expense-tracker",
+  "name": "dor-dam-expense-tracker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,9 +11,9 @@
   "dependencies": {
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "lucide-react": "^0.562.0",
-    "@google/genai": "^1.35.0",
-    "recharts": "^3.6.0"
+    "lucide-react": "0.460.0",
+    "recharts": "2.13.3",
+    "@google/genai": "^1.35.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
