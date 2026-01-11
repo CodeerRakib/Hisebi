@@ -104,6 +104,18 @@ const App: React.FC = () => {
       : [{ date: 'Today', amount: 0, type: 'expense' }];
   }, [transactions]);
 
+  // --- Tooltip Style ---
+  const lightTooltipStyle = {
+    borderRadius: '16px',
+    border: 'none',
+    background: 'rgba(255, 255, 255, 0.98)',
+    boxShadow: '0 20px 25px -5px rgba(0,0,0,0.4)',
+    color: '#0f172a',
+    padding: '10px 14px',
+    fontSize: '12px',
+    fontWeight: '700'
+  };
+
   // --- Actions ---
   const addTransaction = (t: Omit<Transaction, 'id'>) => {
     const newT = { ...t, id: crypto.randomUUID() };
@@ -169,18 +181,6 @@ const App: React.FC = () => {
         </div>
       </div>
     );
-  };
-
-  // Reusable Tooltip Style
-  const lightTooltipStyle = {
-    borderRadius: '16px',
-    border: 'none',
-    background: 'rgba(255, 255, 255, 0.95)',
-    boxShadow: '0 10px 15px -3px rgba(0,0,0,0.3)',
-    color: '#0f172a',
-    padding: '8px 12px',
-    fontSize: '12px',
-    fontWeight: 'bold'
   };
 
   const TransactionForm = () => {
