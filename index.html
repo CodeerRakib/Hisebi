@@ -14,6 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Process Shim for Static Hosting -->
+    <script>
+      window.process = { env: { API_KEY: "" } };
+    </script>
+
+    <!-- Babel for Browser-side TSX Compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <style>
       body {
         font-family: 'Inter', sans-serif;
@@ -61,8 +70,8 @@
       }
     }
     </script>
-    <!-- Entry Point for Modern Browsers -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- Entry Point with Babel Transpilation -->
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
   </head>
   <body class="text-slate-100 transition-colors duration-300 overflow-x-hidden">
     <div id="root"></div>

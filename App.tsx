@@ -22,9 +22,9 @@ import {
   PieChart, Pie, Cell, ResponsiveContainer, 
   BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid 
 } from 'recharts';
-import { Transaction, Debt, UserProfile, FinancialData, AIInsight, TransactionType } from './types';
-import { EXPENSE_CATEGORIES, INCOME_CATEGORIES } from './constants';
-import { getFinancialInsights } from './services/geminiService';
+import { Transaction, Debt, UserProfile, FinancialData, AIInsight, TransactionType } from './types.ts';
+import { EXPENSE_CATEGORIES, INCOME_CATEGORIES } from './constants.tsx';
+import { getFinancialInsights } from './services/geminiService.ts';
 
 const App: React.FC = () => {
   // --- State ---

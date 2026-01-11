@@ -1,6 +1,6 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
-import { FinancialData, AIInsight } from "../types";
+import { FinancialData, AIInsight } from "../types.ts";
 
 export const getFinancialInsights = async (data: FinancialData): Promise<AIInsight> => {
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
